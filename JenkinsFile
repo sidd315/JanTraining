@@ -13,7 +13,10 @@ pipeline {
             }
             stage('Deploy') {
                 steps {
+                
                     echo 'This is the Deploy Stage'
+                    sh 'ls'
+                    sh 'sudo cp * /usr/share/nginx/html'
                 }
             }
         }
