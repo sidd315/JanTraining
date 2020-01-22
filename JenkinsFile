@@ -16,7 +16,7 @@ pipeline {
                 
                     echo 'This is the Deploy Stage'
                     sh 'ls'
-                    sh 'sudo cp * /usr/share/nginx/html'
+                    sh 'cp * /usr/share/nginx/html'
                 }
             }
         }
